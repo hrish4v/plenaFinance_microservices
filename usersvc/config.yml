@@ -1,0 +1,14 @@
+debug: true
+stage: "DEVO"
+timeout: 15
+server:
+  address: ":9001"
+taskDB:
+  type: mysql
+  host: "127.0.0.1"
+  port: "3306"
+  name: taskDB
+  maxConnections: 10
+  database: "taskDB"
+svcbase:
+  tasksvc: "http://localhost:9002"
